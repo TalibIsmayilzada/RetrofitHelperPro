@@ -9,6 +9,8 @@ import java.util.concurrent.TimeUnit
 
 object RetrofitHelper {
 
+
+    //Retrofit helper
     inline fun <reified T> setupRetrofit(timoutSec: Long, baseUrl: String): T{
         val logging: HttpLoggingInterceptor = HttpLoggingInterceptor()
             .setLevel(HttpLoggingInterceptor.Level.BODY)
